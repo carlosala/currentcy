@@ -13,13 +13,11 @@ import { useEffect, useState } from "react"
 
 const Home = ({ data }) => {
   const currencies = getCurrencies(data)
-
   const [firstCurrency, setFirstCurrency] = useState("USD")
   const [secondCurrency, setSecondCurrency] = useState("EUR")
   const [amount, setAmount] = useState(1)
   const [converted, setConverted] = useState(converter(data, 1, "USD", "EUR"))
-  const changeConverted = () =>
-    setConverted(converter(data, amount, firstCurrency, secondCurrency))
+
   const changeFirstCurrency = (v) => {
     setFirstCurrency(v.target.value)
   }
@@ -29,7 +27,14 @@ const Home = ({ data }) => {
   const changeAmount = (v) => {
     setAmount(v.target.value)
   }
-  useEffect(() => changeConverted())
+  useEffect(() => {
+    const formatted = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: secondCurrency,
+    }).format(converter(data, amount, firstCurrency, secondCurrency))
+    setConverted(formatted)
+  }, [amount, data, firstCurrency, secondCurrency])
+
   return (
     <Container
       display="flex"
