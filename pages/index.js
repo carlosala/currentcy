@@ -7,7 +7,8 @@ import {
   Text,
 } from "@chakra-ui/react"
 import ColorModeSwitch from "components/ColorModeSwitch"
-import { CurrencyInput, CurrencySelector } from "components/Currency"
+import CurrencyInput from "components/CurrencyInput"
+import CurrencySelector from "components/CurrencySelector"
 import { converter, getCurrencies } from "lib/currencyUtils"
 import { useEffect, useState } from "react"
 
@@ -18,17 +19,8 @@ const Home = ({ data }) => {
   const [amount, setAmount] = useState(1)
   const [converted, setConverted] = useState(converter(data, 1, "USD", "EUR"))
 
-  const changeFirstCurrency = (v) => {
-    setFirstCurrency(v.target.value)
-  }
-  const changeSecondCurrency = (v) => {
-    setSecondCurrency(v.target.value)
-  }
-  const changeAmount = (v) => {
-    setAmount(v.target.value)
-  }
   useEffect(() => {
-    const formatted = new Intl.NumberFormat("en-US", {
+    const formatted = new Intl.NumberFormat(navigator.languages[0], {
       style: "currency",
       currency: secondCurrency,
     }).format(converter(data, amount, firstCurrency, secondCurrency))
@@ -51,8 +43,8 @@ const Home = ({ data }) => {
       </Flex>
       <Flex alignItems="center" direction={{ base: "column", lg: "row" }}>
         <CurrencyInput
-          changeAmount={changeAmount}
-          changeCurrency={changeFirstCurrency}
+          setAmount={setAmount}
+          setCurrency={setFirstCurrency}
           width={{ lg: "60%" }}
           currencies={currencies}
         />
@@ -65,7 +57,7 @@ const Home = ({ data }) => {
           </Text>
         </Center>
         <CurrencySelector
-          changeCurrency={changeSecondCurrency}
+          setCurrency={setSecondCurrency}
           width="28"
           currencies={currencies}
           defaultCurrency="EUR"
