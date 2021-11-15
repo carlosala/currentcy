@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/carlosala/currentcy/compare/v0.1.2...v0.1.3) (2021-11-15)
+
+
+### Features
+
+* refactor hooks, dividing Currency.js file ([7364e3a](https://github.com/carlosala/currentcy/commit/7364e3a36844e58334172cac6b336274d2f9c0c0))
+
+
+### Bug Fixes
+
+* organizing imports ([85100a4](https://github.com/carlosala/currentcy/commit/85100a4ff3fce1d1859e7a43ab4f497f6592dbbe))
+
 ### [0.1.2](https://github.com/carlosala/currentcy/compare/v0.1.1...v0.1.2) (2021-11-15)
 
 
