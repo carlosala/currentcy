@@ -16,15 +16,15 @@
     "@emotion/styled": "^11",
     "cors": "^2.8.5",
     "framer-motion": "^4",
-    "next": "12.0.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "swr": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "7",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "12.0.3",
+    "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.4.1",
     "standard-version": "^9.3.2"
