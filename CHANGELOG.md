@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/carlosala/currentcy/compare/v0.1.4...v0.1.5) (2021-11-16)
+
+
+### Bug Fixes
+
+* adding 404 page and removing redirects ([3c143fc](https://github.com/carlosala/currentcy/commit/3c143fc586a90de0e7f7910d69a5d9106d5b0e20))
+
 ### [0.1.4](https://github.com/carlosala/currentcy/compare/v0.1.3...v0.1.4) (2021-11-16)
 
 
