@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/carlosala/currentcy/compare/v0.1.5...v0.1.6) (2021-11-16)
+
+
+### Features
+
+* adding cors to api ([2e9999f](https://github.com/carlosala/currentcy/commit/2e9999f71e1affa4206181b107b90e20a891f5fd))
+* adding latestData api endpoint ([2d499dc](https://github.com/carlosala/currentcy/commit/2d499dc783d729b7dfcbdcb998d9ec71ac84b35f))
+
 ### [0.1.5](https://github.com/carlosala/currentcy/compare/v0.1.4...v0.1.5) (2021-11-16)
 
 
