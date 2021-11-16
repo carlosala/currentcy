@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/carlosala/currentcy/compare/v0.1.6...v0.2.0) (2021-11-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* switching from SSR to SSG
+
+### Features
+
+* switching from SSR to SSG ([868519d](https://github.com/carlosala/currentcy/commit/868519da1533c494d3f5eb2237caaa242856075c))
+
 ### [0.1.6](https://github.com/carlosala/currentcy/compare/v0.1.5...v0.1.6) (2021-11-16)
 
 
