@@ -47,6 +47,7 @@ const Home = ({ data }) => {
           setCurrency={setFirstCurrency}
           width={{ lg: "60%" }}
           currencies={currencies}
+          aria-label="Choose first currency"
         />
         <Center
           height={{ base: "16", lg: "10" }}
@@ -61,6 +62,7 @@ const Home = ({ data }) => {
           width="28"
           currencies={currencies}
           defaultCurrency="EUR"
+          aria-label="Choose second currency"
         />
       </Flex>
     </Container>

@@ -4,6 +4,7 @@ const CurrencySelector = ({
   currencies,
   defaultCurrency,
   setCurrency,
+  ariaLabel,
   ...props
 }) => (
   <Select
@@ -13,6 +14,7 @@ const CurrencySelector = ({
     textAlign="center"
     defaultValue={defaultCurrency}
     onChange={(v) => setCurrency(v.target.value)}
+    aria-level={ariaLabel}
   >
     {currencies.map((c) => (
       <option key={c} value={c}>
