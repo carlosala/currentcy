@@ -4,27 +4,31 @@ import {
   Flex,
   Heading,
   Spacer,
+  Spinner,
   Text,
 } from "@chakra-ui/react"
 import ColorModeSwitch from "components/ColorModeSwitch"
 import CurrencyInput from "components/CurrencyInput"
 import CurrencySelector from "components/CurrencySelector"
-import { converter, getCurrencies } from "lib/currencyUtils"
+import useData from "hooks/useData"
+import { converter } from "lib/currencyUtils"
 import { useEffect, useState } from "react"
 
-const Home = ({ data }) => {
-  const currencies = getCurrencies(data)
+const Home = () => {
+  const { data } = useData()
   const [firstCurrency, setFirstCurrency] = useState("USD")
   const [secondCurrency, setSecondCurrency] = useState("EUR")
   const [amount, setAmount] = useState(1)
-  const [converted, setConverted] = useState(converter(data, 1, "USD", "EUR"))
+  const [converted, setConverted] = useState(converter(1))
 
   useEffect(() => {
-    const formatted = new Intl.NumberFormat(navigator.languages[0], {
-      style: "currency",
-      currency: secondCurrency,
-    }).format(converter(data, amount, firstCurrency, secondCurrency))
-    setConverted(formatted)
+    if (data) {
+      const formatted = new Intl.NumberFormat(navigator.languages[0], {
+        style: "currency",
+        currency: secondCurrency,
+      }).format(converter(data, amount, firstCurrency, secondCurrency))
+      setConverted(formatted)
+    }
   }, [amount, data, firstCurrency, secondCurrency])
 
   return (
@@ -45,34 +49,29 @@ const Home = ({ data }) => {
         <CurrencyInput
           setAmount={setAmount}
           setCurrency={setFirstCurrency}
-          width={{ lg: "60%" }}
-          currencies={currencies}
-          aria-label="Choose first currency"
+          ariaLabel="Choose first currency"
         />
         <Center
           height={{ base: "16", lg: "10" }}
           width={{ base: "100%", lg: "40%" }}
         >
-          <Text fontSize="2xl" fontWeight="bold">
-            {converted}
-          </Text>
+          {Number.isNaN(converted) ? (
+            <Spinner />
+          ) : (
+            <Text fontSize="2xl" fontWeight="bold">
+              {converted}
+            </Text>
+          )}
         </Center>
         <CurrencySelector
           setCurrency={setSecondCurrency}
           width="28"
-          currencies={currencies}
           defaultCurrency="EUR"
-          aria-label="Choose second currency"
+          ariaLabel="Choose second currency"
         />
       </Flex>
     </Container>
   )
-}
-
-export const getServerSideProps = async () => {
-  const url = `https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.APIKEY}`
-  const { data } = await fetch(url).then((str) => str.json())
-  return { props: { data } }
 }
 
 export default Home

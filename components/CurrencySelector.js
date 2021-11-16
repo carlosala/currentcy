@@ -1,27 +1,33 @@
 import { Select } from "@chakra-ui/react"
+import useData from "hooks/useData"
+import { getCurrencies } from "lib/currencyUtils"
 
 const CurrencySelector = ({
-  currencies,
   defaultCurrency,
   setCurrency,
   ariaLabel,
-  ...props
-}) => (
-  <Select
-    display="flex"
-    variant="flushed"
-    {...props}
-    textAlign="center"
-    defaultValue={defaultCurrency}
-    onChange={(v) => setCurrency(v.target.value)}
-    aria-level={ariaLabel}
-  >
-    {currencies.map((c) => (
-      <option key={c} value={c}>
-        {c}
-      </option>
-    ))}
-  </Select>
-)
+  width,
+}) => {
+  const { data } = useData()
+  if (!data) return <div />
+  const currencies = getCurrencies(data)
+  return (
+    <Select
+      display="flex"
+      variant="flushed"
+      textAlign="center"
+      defaultValue={defaultCurrency}
+      onChange={(v) => setCurrency(v.target.value)}
+      aria-label={ariaLabel}
+      width={width}
+    >
+      {currencies.map((c) => (
+        <option key={c} value={c}>
+          {c}
+        </option>
+      ))}
+    </Select>
+  )
+}
 
 export default CurrencySelector

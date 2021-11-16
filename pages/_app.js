@@ -7,6 +7,12 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Head>
         <title>Currentcy</title>
+        <link
+          rel="preload"
+          href="https://currentcy.carlosala.dev/api/latestData"
+          as="fetch"
+          crossOrigin="anonymous"
+        />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
