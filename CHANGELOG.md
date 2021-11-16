@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/carlosala/currentcy/compare/v0.1.3...v0.1.4) (2021-11-16)
+
+
+### Features
+
+* adding robots.txt ([20adf59](https://github.com/carlosala/currentcy/commit/20adf59f3508d771a5522cd6c1725c70244fb02e))
+* improving accessibility ([9ceae8f](https://github.com/carlosala/currentcy/commit/9ceae8fa3f20324e2e190a27005ea96a56ee1ef5))
+
+
+### Bug Fixes
+
+* adding -s to standard-version to sign tags ([9af0cf4](https://github.com/carlosala/currentcy/commit/9af0cf4f2df7b8e1386bf8c99b89520c25c46867))
+
 ### [0.1.3](https://github.com/carlosala/currentcy/compare/v0.1.2...v0.1.3) (2021-11-15)
 
 
