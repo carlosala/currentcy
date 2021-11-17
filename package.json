@@ -14,6 +14,7 @@
     "@chakra-ui/react": "^1.6.12",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@types/cors": "^2.8.12",
     "cors": "^2.8.5",
     "framer-motion": "^4",
     "next": "^12.0.4",
@@ -27,6 +28,7 @@
     "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.4.1",
+    "prettier-plugin-jsdoc": "^0.3.30",
     "standard-version": "^9.3.2"
   }
 }

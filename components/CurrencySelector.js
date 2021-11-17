@@ -1,7 +1,20 @@
-import { Select } from "@chakra-ui/react"
+import { Select, Spinner } from "@chakra-ui/react"
 import useData from "hooks/useData"
 import { getCurrencies } from "lib/currencyUtils"
 
+/*
+ * @typedef {Object} CurrencySelectorType
+ * @param {string} defaultCurrency
+ * @param {Function} setCurrency
+ * @param {string} ariaLabel
+ * @param {string} width
+ */
+
+/* CurrencySelector.
+ *
+ * @param {CurrencySelectorType} props
+ * @returns {import("react").ReactElement}
+ */
 const CurrencySelector = ({
   defaultCurrency,
   setCurrency,
@@ -9,7 +22,7 @@ const CurrencySelector = ({
   width,
 }) => {
   const { data } = useData()
-  if (!data) return <div />
+  if (!data) return <Spinner />
   const currencies = getCurrencies(data)
   return (
     <Select

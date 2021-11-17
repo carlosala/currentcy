@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <title>Currentcy</title>
         <link
           rel="preload"
-          href="https://currentcy.carlosala.dev/api/latestData"
+          href="https://currentcy.carlosala.dev/api/latestdata"
           as="fetch"
           crossOrigin="anonymous"
         />

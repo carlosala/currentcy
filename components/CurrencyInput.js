@@ -2,6 +2,19 @@ import { Input, InputGroup, InputRightElement } from "@chakra-ui/react"
 import useData from "hooks/useData"
 import CurrencySelector from "./CurrencySelector"
 
+/**
+ * @typedef {Object} CurrencyInputType
+ * @property {Function} setAmount
+ * @property {Function} setCurrency
+ * @property {string} ariaLabel
+ */
+
+/**
+ * CurrencyInput.
+ *
+ * @param {CurrencyInputType} props
+ * @returns {import("react").ReactElement}
+ */
 const CurrencyInput = ({ setAmount, setCurrency, ariaLabel }) => {
   const { data } = useData()
   if (!data) return <div />
