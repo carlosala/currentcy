@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/carlosala/currentcy/compare/v0.2.1...v0.3.0) (2021-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* switching from latestData to latestdata endpoint
+
+### Features
+
+* adding typecheck (jsdoc), improving api ([a2b74d1](https://github.com/carlosala/currentcy/commit/a2b74d1b1db93ac0ba7412dc0aba56050e4b405d))
+
+
+### Bug Fixes
+
+* solving NaN problem ([b1ef344](https://github.com/carlosala/currentcy/commit/b1ef3449845a269b4cf198c674f73a4fd40fee90))
+
 ### [0.2.1](https://github.com/carlosala/currentcy/compare/v0.2.0...v0.2.1) (2021-11-16)
 
 
