@@ -14,7 +14,6 @@ const fetcher = (url) => fetch(url).then((r) => r.json())
  * @returns {Object}
  */
 const useData = () => {
-  fetcher("hola")
   const url = "https://currentcy.carlosala.dev/api/latestdata"
   const { data } = useSWR(url, fetcher)
   return { data }
