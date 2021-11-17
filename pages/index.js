@@ -4,7 +4,6 @@ import {
   Flex,
   Heading,
   Spacer,
-  Spinner,
   Text,
 } from "@chakra-ui/react"
 import ColorModeSwitch from "components/ColorModeSwitch"
@@ -19,7 +18,7 @@ const Home = () => {
   const [firstCurrency, setFirstCurrency] = useState("USD")
   const [secondCurrency, setSecondCurrency] = useState("EUR")
   const [amount, setAmount] = useState(1)
-  const [converted, setConverted] = useState(converter(1))
+  const [converted, setConverted] = useState("1")
 
   useEffect(() => {
     if (data) {
@@ -55,12 +54,12 @@ const Home = () => {
           height={{ base: "16", lg: "10" }}
           width={{ base: "100%", lg: "40%" }}
         >
-          {Number.isNaN(converted) ? (
-            <Spinner />
-          ) : (
+          {data ? (
             <Text fontSize="2xl" fontWeight="bold">
               {converted}
             </Text>
+          ) : (
+            <div />
           )}
         </Center>
         <CurrencySelector
