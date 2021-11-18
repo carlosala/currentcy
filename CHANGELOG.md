@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/carlosala/currentcy/compare/v0.3.2...v0.3.3) (2021-11-18)
+
+
+### Features
+
+* improving jsdoc typing ([5fb08da](https://github.com/carlosala/currentcy/commit/5fb08dabb83c7d3f581a1ed7868b7a372f2e7041))
+
+
+### Bug Fixes
+
+* moving @types/cors to devDependencies ([6aaf0f7](https://github.com/carlosala/currentcy/commit/6aaf0f75267769ceddc926c34a1d11292fca6f3b))
+
 ### [0.3.2](https://github.com/carlosala/currentcy/compare/v0.3.1...v0.3.2) (2021-11-17)
 
 
