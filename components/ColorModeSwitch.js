@@ -4,7 +4,7 @@ import { Button, useColorMode, useColorModeValue } from "@chakra-ui/react"
 /**
  * ColorModeSwitch.
  *
- * @returns {import("react").ReactElement}
+ * @returns {import("react").ReactElement} Button to change theme using ChakraUI
  */
 const ColorModeSwitch = () => {
   const { toggleColorMode } = useColorMode()

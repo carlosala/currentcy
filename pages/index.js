@@ -14,7 +14,7 @@ import { converter } from "lib/currencyUtils"
 import { useEffect, useState } from "react"
 
 const Home = () => {
-  const { data } = useData()
+  const data = useData()
   const [firstCurrency, setFirstCurrency] = useState("USD")
   const [secondCurrency, setSecondCurrency] = useState("EUR")
   const [amount, setAmount] = useState(1)

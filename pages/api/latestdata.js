@@ -3,8 +3,8 @@ import Cors from "cors"
 /**
  * Cors.
  *
- * @param {any} req
- * @param {any} res
+ * @param {import("next").NextApiRequest} req
+ * @param {import("next").NextApiResponse} res
  */
 const cors = (req, res) =>
   new Promise((resolve, reject) => {
@@ -19,8 +19,8 @@ const cors = (req, res) =>
 /**
  * Latestdata.
  *
- * @param {any} req
- * @param {any} res
+ * @param {import("next").NextApiRequest} req
+ * @param {import("next").NextApiResponse} res
  */
 const latestdata = async (req, res) => {
   const url = `https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.APIKEY}`
