@@ -49,6 +49,7 @@ const Home = () => {
           setAmount={setAmount}
           setCurrency={setFirstCurrency}
           ariaLabel="Choose first currency"
+          initialFocus
         />
         <Center
           height={{ base: "16", lg: "10" }}

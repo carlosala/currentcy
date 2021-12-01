@@ -7,6 +7,7 @@ import CurrencySelector from "./CurrencySelector"
  * @property {(s: number) => void} setAmount
  * @property {(s: string) => void} setCurrency
  * @property {string} ariaLabel
+ * @property {boolean} initialFocus
  */
 
 /**
@@ -15,7 +16,7 @@ import CurrencySelector from "./CurrencySelector"
  * @param {CurrencyInputType} props
  * @returns {import("react").ReactElement} Selector to choose currency
  */
-const CurrencyInput = ({ setAmount, setCurrency, ariaLabel }) => {
+const CurrencyInput = ({ setAmount, setCurrency, ariaLabel, initialFocus }) => {
   const data = useData()
   if (!data) return <div />
   return (
@@ -38,6 +39,7 @@ const CurrencyInput = ({ setAmount, setCurrency, ariaLabel }) => {
         onChange={(v) => setAmount(Number(v.target.value))}
         type="number"
         aria-label="Choose amount"
+        autoFocus={initialFocus}
       />
     </InputGroup>
   )
