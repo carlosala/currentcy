@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.7](https://github.com/carlosala/currentcy/compare/v0.3.6...v0.3.7) (2021-12-04)
+
+
+### Features
+
+* from arrow function to function ([e125aad](https://github.com/carlosala/currentcy/commit/e125aad1a93bca8fc8617bab53ce17dfec8f1bc7))
+
+
+### Bug Fixes
+
+* updating dependencies ([7e44154](https://github.com/carlosala/currentcy/commit/7e441541a33e7d3056716e47bd77c314ce62c962))
+
 ### [0.3.6](https://github.com/carlosala/currentcy/compare/v0.3.5...v0.3.6) (2021-12-01)
 
 
