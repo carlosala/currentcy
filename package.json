@@ -7,27 +7,27 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "standard-version -s"
+    "release": "standard-version"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.17",
-    "@chakra-ui/react": "^1.6.12",
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.7.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "cors": "^2.8.5",
     "framer-motion": "^4",
-    "next": "^12.0.4",
+    "next": "^12.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "swr": "^1.0.1"
+    "swr": "^1.1.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
-    "eslint": "7",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "^12.0.4",
+    "eslint": "^8",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-next": "^12.0.6",
     "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.1",
     "prettier-plugin-jsdoc": "^0.3.30",
     "standard-version": "^9.3.2"
   }
