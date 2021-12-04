@@ -13,10 +13,8 @@ const fetcher = (url) => fetch(url).then((r) => r.json())
  *
  * @returns {Object<string, number>}
  */
-const useData = () => {
+export default function useData() {
   const url = "https://currentcy.carlosala.dev/api/latestdata"
   const { data } = useSWR(url, fetcher)
   return data
 }
-
-export default useData

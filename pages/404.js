@@ -2,15 +2,15 @@
 import { Center, Heading, Link } from "@chakra-ui/react"
 import NextLink from "next/link"
 
-const Custom404 = () => (
-  <Center flexDir="column" mt="24">
-    <Heading pb="4">This page cannot be found (aka 404 error)</Heading>
-    <NextLink href="/" passHref>
-      <Link>
-        <Heading>HOME PAGE</Heading>
-      </Link>
-    </NextLink>
-  </Center>
-)
-
-export default Custom404
+export default function Custom404() {
+  return (
+    <Center flexDir="column" mt="24">
+      <Heading pb="4">This page cannot be found (aka 404 error)</Heading>
+      <NextLink href="/" passHref>
+        <Link>
+          <Heading>HOME PAGE</Heading>
+        </Link>
+      </NextLink>
+    </Center>
+  )
+}

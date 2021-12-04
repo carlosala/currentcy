@@ -6,7 +6,7 @@ import { Button, useColorMode, useColorModeValue } from "@chakra-ui/react"
  *
  * @returns {import("react").ReactElement} Button to change theme using ChakraUI
  */
-const ColorModeSwitch = () => {
+export default function ColorModeSwitch() {
   const { toggleColorMode } = useColorMode()
   const icon = useColorModeValue(<SunIcon />, <MoonIcon />)
   return (
@@ -15,5 +15,3 @@ const ColorModeSwitch = () => {
     </Button>
   )
 }
-
-export default ColorModeSwitch

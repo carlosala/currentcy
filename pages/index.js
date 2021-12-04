@@ -13,7 +13,7 @@ import useData from "hooks/useData"
 import { converter } from "lib/currencyUtils"
 import { useEffect, useState } from "react"
 
-const Home = () => {
+export default function Home() {
   const data = useData()
   const [firstCurrency, setFirstCurrency] = useState("USD")
   const [secondCurrency, setSecondCurrency] = useState("EUR")
@@ -73,5 +73,3 @@ const Home = () => {
     </Container>
   )
 }
-
-export default Home

@@ -16,7 +16,12 @@ import CurrencySelector from "./CurrencySelector"
  * @param {CurrencyInputType} props
  * @returns {import("react").ReactElement} Selector to choose currency
  */
-const CurrencyInput = ({ setAmount, setCurrency, ariaLabel, initialFocus }) => {
+export default function CurrencyInput({
+  setAmount,
+  setCurrency,
+  ariaLabel,
+  initialFocus,
+}) {
   const data = useData()
   if (!data) return <div />
   return (
@@ -44,5 +49,3 @@ const CurrencyInput = ({ setAmount, setCurrency, ariaLabel, initialFocus }) => {
     </InputGroup>
   )
 }
-
-export default CurrencyInput

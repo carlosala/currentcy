@@ -6,8 +6,8 @@ import Cors from "cors"
  * @param {import("next").NextApiRequest} req
  * @param {import("next").NextApiResponse} res
  */
-const cors = (req, res) =>
-  new Promise((resolve, reject) => {
+function cors(req, res) {
+  return new Promise((resolve, reject) => {
     Cors({ methods: ["GET"] })(req, res, (result) => {
       if (result instanceof Error) {
         return reject(result)
@@ -15,6 +15,7 @@ const cors = (req, res) =>
       return resolve(result)
     })
   })
+}
 
 /**
  * Latestdata.
@@ -22,7 +23,7 @@ const cors = (req, res) =>
  * @param {import("next").NextApiRequest} req
  * @param {import("next").NextApiResponse} res
  */
-const latestdata = async (req, res) => {
+async function latestdata(req, res) {
   const url = `https://freecurrencyapi.net/api/v2/latest?apikey=${process.env.APIKEY}`
   await cors(req, res)
   try {

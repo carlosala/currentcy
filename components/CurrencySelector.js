@@ -16,12 +16,12 @@ import { getCurrencies } from "lib/currencyUtils"
  * @param {CurrencySelectorType} props
  * @returns {import("react").ReactElement}
  */
-const CurrencySelector = ({
+export default function CurrencySelector({
   defaultCurrency,
   setCurrency,
   ariaLabel,
   width,
-}) => {
+}) {
   const data = useData()
   if (!data) return <Spinner />
   const currencies = getCurrencies(data)
@@ -43,5 +43,3 @@ const CurrencySelector = ({
     </Select>
   )
 }
-
-export default CurrencySelector
