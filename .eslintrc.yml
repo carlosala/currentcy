@@ -3,9 +3,6 @@ extends:
   - next/core-web-vitals
   - prettier
 rules:
-  react/function-component-definition:
-    - error
-    - namedComponents: function-declaration
   react/jsx-filename-extension: off
   react/jsx-props-no-spreading: off
 settings:
