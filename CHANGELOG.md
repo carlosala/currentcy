@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.12](https://github.com/carlosala/currentcy/compare/v0.3.11...v0.3.12) (2021-12-27)
+
+
+### Bug Fixes
+
+* airbnb eslint updated ([4bc4868](https://github.com/carlosala/currentcy/commit/4bc4868d82e365e6082b5d6ea9cc91a42315af05))
+
 ### [0.3.11](https://github.com/carlosala/currentcy/compare/v0.3.10...v0.3.11) (2021-12-23)
 
 
