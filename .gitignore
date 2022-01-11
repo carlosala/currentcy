@@ -1,3 +1,5 @@
 node_modules
 .next
 .env.local
+yarn.lock
+package-lock.json
