@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.13](https://github.com/carlosala/currentcy/compare/v0.3.12...v0.3.13) (2022-01-11)
+
+
+### Bug Fixes
+
+* stop using carets ([08e5639](https://github.com/carlosala/currentcy/commit/08e5639b9bcba79d5e8db79691c85f8c21ea84c7))
+
 ### [0.3.12](https://github.com/carlosala/currentcy/compare/v0.3.11...v0.3.12) (2021-12-27)
 
 
