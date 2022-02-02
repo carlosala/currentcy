@@ -17,10 +17,10 @@
     "@emotion/styled": "11",
     "cors": "2.8.5",
     "framer-motion": "5",
-    "next": "12.0.9",
+    "next": "12.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "swr": "1.2.0"
+    "swr": "1.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "16.1.0",
@@ -28,7 +28,7 @@
     "@types/cors": "2.8.12",
     "eslint": "8",
     "eslint-config-airbnb": "19.0.4",
-    "eslint-config-next": "12.0.9",
+    "eslint-config-next": "12.0.10",
     "eslint-config-prettier": "8.3.0",
     "husky": "7.0.4",
     "prettier": "2.5.1",
