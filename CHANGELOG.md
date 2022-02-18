@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.17](https://github.com/carlosala/currentcy/compare/v0.3.16...v0.3.17) (2022-02-18)
+
+
+### Bug Fixes
+
+* update deps ([b77e29c](https://github.com/carlosala/currentcy/commit/b77e29cdd8f9d6eee904b0e60b96d875f55bb002))
+
 ### [0.3.16](https://github.com/carlosala/currentcy/compare/v0.3.15...v0.3.16) (2022-02-07)
 
 
