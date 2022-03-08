@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.19](https://github.com/carlosala/currentcy/compare/v0.3.18...v0.3.19) (2022-03-08)
+
+
+### Features
+
+* freecurrencyapi is now currencyapi ([4fa3805](https://github.com/carlosala/currentcy/commit/4fa3805e7b66c9defd5fb73f4bffb7646171c377))
+
+
+### Bug Fixes
+
+* update deps ([f49a5fa](https://github.com/carlosala/currentcy/commit/f49a5fae20f5f199c46995ca887a66a1384141f2))
+
 ### [0.3.18](https://github.com/carlosala/currentcy/compare/v0.3.17...v0.3.18) (2022-02-24)
 
 
