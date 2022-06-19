@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/carlosala/currentcy/compare/v0.3.24...v0.4.0) (2022-06-19)
+
+
+### Features
+
+* put CHF on top of currencies list ([ab3c585](https://github.com/carlosala/currentcy/commit/ab3c585b442f8bb3b6deae8d6653545b281a7e18))
+
+
+### Bug Fixes
+
+* remove console statement ([97499d2](https://github.com/carlosala/currentcy/commit/97499d2a2af3acad388763bc71f13ee48f7d0384))
+
 ### [0.3.24](https://github.com/carlosala/currentcy/compare/v0.3.23...v0.3.24) (2022-06-04)
 
 ### [0.3.23](https://github.com/carlosala/currentcy/compare/v0.3.22...v0.3.23) (2022-05-16)
