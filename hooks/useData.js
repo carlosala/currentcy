@@ -18,6 +18,5 @@ const fetcher = (url) => fetch(url).then((r) => r.json())
 export default function useData() {
   const url = "https://currentcy.carlosala.dev/api/latestdata"
   const { data } = useSWR(url, fetcher)
-  if (data) console.log(data)
   return data
 }
