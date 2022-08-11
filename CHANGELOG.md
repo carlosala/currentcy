@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.4](https://github.com/carlosala/currentcy/compare/v0.4.3...v0.4.4) (2022-08-11)
+
+
+### Features
+
+* add GBP at the beginning of the currency list ([0f918db](https://github.com/carlosala/currentcy/commit/0f918db81d3ec040494b0429466fc64543ccc7f9))
+* swap default currencies ([bc98a9e](https://github.com/carlosala/currentcy/commit/bc98a9e009995da82a049d7d4968c7a767ec1ba6))
+
 ### [0.4.3](https://github.com/carlosala/currentcy/compare/v0.4.2...v0.4.3) (2022-07-27)
 
 ### [0.4.2](https://github.com/carlosala/currentcy/compare/v0.4.1...v0.4.2) (2022-07-05)
