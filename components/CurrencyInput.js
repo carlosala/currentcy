@@ -34,7 +34,7 @@ export default function CurrencyInput({
       <InputRightElement width="20">
         <CurrencySelector
           setCurrency={setCurrency}
-          defaultCurrency="USD"
+          defaultCurrency="EUR"
           ariaLabel={ariaLabel}
           width="20"
         />
