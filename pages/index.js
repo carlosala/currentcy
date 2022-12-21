@@ -15,8 +15,8 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
   const data = useData()
-  const [firstCurrency, setFirstCurrency] = useState("EUR")
-  const [secondCurrency, setSecondCurrency] = useState("USD")
+  const [firstCurrency, setFirstCurrency] = useState("USD")
+  const [secondCurrency, setSecondCurrency] = useState("EUR")
   const [amount, setAmount] = useState(1)
   const [converted, setConverted] = useState("1")
 
@@ -66,7 +66,7 @@ export default function Home() {
         <CurrencySelector
           setCurrency={setSecondCurrency}
           width="28"
-          defaultCurrency="USD"
+          defaultCurrency="EUR"
           ariaLabel="Choose second currency"
         />
       </Flex>
