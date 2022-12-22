@@ -3,8 +3,9 @@
     "baseUrl": ".",
     "checkJs": true,
     "jsx": "preserve",
-    "module": "es2020",
-    "moduleResolution": "node"
+    "module": "es2022",
+    "moduleResolution": "node",
+    "target": "es2022"
   },
   "exclude": ["node_modules", ".next"]
 }
