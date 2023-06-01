@@ -11,33 +11,35 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@chakra-ui/icons": "2.0.18",
-    "@chakra-ui/react": "2.5.5",
-    "@emotion/react": "11.10.6",
-    "@emotion/styled": "11.10.6",
+    "@chakra-ui/icons": "2.0.19",
+    "@chakra-ui/react": "2.7.0",
+    "@chakra-ui/system": "2.5.8",
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
     "cors": "2.8.5",
-    "framer-motion": "10.10.0",
-    "next": "13.2.4",
+    "framer-motion": "10.12.16",
+    "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swr": "2.1.1"
+    "swr": "2.1.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.5.1",
-    "@commitlint/config-conventional": "17.4.4",
+    "@commitlint/cli": "17.6.5",
+    "@commitlint/config-conventional": "17.6.5",
     "@types/cors": "2.8.13",
-    "eslint": "8.37.0",
-    "eslint-config-next": "13.2.4",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
     "eslint-config-prettier": "8.8.0",
-    "eslint-config-standard": "17.0.0",
+    "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-n": "15.7.0",
+    "eslint-plugin-n": "16.0.0",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.32.2",
     "husky": "8.0.3",
-    "prettier": "2",
+    "prettier": "2.8.8",
     "prettier-plugin-jsdoc": "0.4.2",
-    "standard-version": "9.5.0"
+    "standard-version": "9.5.0",
+    "typescript": "^5.0.4"
   },
   "commitlint": {
     "extends": [
