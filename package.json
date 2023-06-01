@@ -16,6 +16,7 @@
     "@chakra-ui/system": "2.5.8",
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
+    "@vercel/analytics": "^1.0.1",
     "cors": "2.8.5",
     "framer-motion": "10.12.16",
     "next": "13.4.4",
