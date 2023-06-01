@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.9](https://github.com/carlosala/currentcy/compare/v0.4.8...v0.4.9) (2023-06-01)
+
+
+### Features
+
+* add vercel analytics ([24d2af2](https://github.com/carlosala/currentcy/commit/24d2af221a03e91c28bba7f0e62b055e2f5c192c))
+
 ### [0.4.8](https://github.com/carlosala/currentcy/compare/v0.4.7...v0.4.8) (2023-04-02)
 
 ### [0.4.7](https://github.com/carlosala/currentcy/compare/v0.4.6...v0.4.7) (2022-12-22)
