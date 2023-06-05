@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.10](https://github.com/carlosala/currentcy/compare/v0.4.8...v0.4.10) (2023-06-05)
+
+
+### Features
+
+* add `SEK` as favourite currency ([b3becae](https://github.com/carlosala/currentcy/commit/b3becaed56907d27ad1daca9bc9fad0ea6825bb6))
+* add vercel analytics ([24d2af2](https://github.com/carlosala/currentcy/commit/24d2af221a03e91c28bba7f0e62b055e2f5c192c))
+
 ### [0.4.9](https://github.com/carlosala/currentcy/compare/v0.4.8...v0.4.9) (2023-06-01)
 
 
