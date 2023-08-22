@@ -10,13 +10,14 @@ import ColorModeSwitch from "components/ColorModeSwitch"
 import CurrencyInput from "components/CurrencyInput"
 import CurrencySelector from "components/CurrencySelector"
 import useData from "hooks/useData"
+import { FIRST_CURRENCY, SECOND_CURRENCY } from "lib/constants"
 import { converter } from "lib/currencyUtils"
 import { useEffect, useState } from "react"
 
 export default function Home() {
   const data = useData()
-  const [firstCurrency, setFirstCurrency] = useState("SEK")
-  const [secondCurrency, setSecondCurrency] = useState("EUR")
+  const [firstCurrency, setFirstCurrency] = useState(FIRST_CURRENCY)
+  const [secondCurrency, setSecondCurrency] = useState(SECOND_CURRENCY)
   const [amount, setAmount] = useState(1)
   const [converted, setConverted] = useState("1")
 
@@ -66,7 +67,7 @@ export default function Home() {
         <CurrencySelector
           setCurrency={setSecondCurrency}
           width="28"
-          defaultCurrency="EUR"
+          defaultCurrency={SECOND_CURRENCY}
           ariaLabel="Choose second currency"
         />
       </Flex>

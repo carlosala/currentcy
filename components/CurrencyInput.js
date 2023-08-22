@@ -1,6 +1,7 @@
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react"
 import useData from "hooks/useData"
 import CurrencySelector from "./CurrencySelector"
+import { FIRST_CURRENCY } from "lib/constants"
 
 /**
  * @typedef CurrencyInputType
@@ -34,7 +35,7 @@ export default function CurrencyInput({
       <InputRightElement width="20">
         <CurrencySelector
           setCurrency={setCurrency}
-          defaultCurrency="USD"
+          defaultCurrency={FIRST_CURRENCY}
           ariaLabel={ariaLabel}
           width="20"
         />
