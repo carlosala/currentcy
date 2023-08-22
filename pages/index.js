@@ -15,7 +15,7 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
   const data = useData()
-  const [firstCurrency, setFirstCurrency] = useState("USD")
+  const [firstCurrency, setFirstCurrency] = useState("SEK")
   const [secondCurrency, setSecondCurrency] = useState("EUR")
   const [amount, setAmount] = useState(1)
   const [converted, setConverted] = useState("1")
