@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.11](https://github.com/carlosala/currentcy/compare/v0.4.10...v0.4.11) (2023-08-22)
+
+
+### Features
+
+* make `SEK` default currency ([728ffbc](https://github.com/carlosala/currentcy/commit/728ffbcd67f5e0369452bb463ea29aff20e7d438))
+
 ### [0.4.10](https://github.com/carlosala/currentcy/compare/v0.4.8...v0.4.10) (2023-06-05)
 
 
