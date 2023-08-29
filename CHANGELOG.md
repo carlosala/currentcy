@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.13](https://github.com/carlosala/currentcy/compare/v0.4.12...v0.4.13) (2023-08-29)
+
+
+### Features
+
+* add favicon ([caff706](https://github.com/carlosala/currentcy/commit/caff706768599f5c679307d313c51556795c3c2f))
+
+
+### Bug Fixes
+
+* allow using `,` as decimal point ([2f16d68](https://github.com/carlosala/currentcy/commit/2f16d68119b46c416bb5390ff6bb1458918b09d3))
+
 ### [0.4.12](https://github.com/carlosala/currentcy/compare/v0.4.11...v0.4.12) (2023-08-22)
 
 
