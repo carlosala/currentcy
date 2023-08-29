@@ -9,6 +9,7 @@ export default function MyApp({ Component, pageProps }) {
       <ChakraProvider theme={theme}>
         <Head>
           <title>Currentcy</title>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
           <link
             rel="preload"
             href="https://currentcy.carlosala.dev/api/latestdata"
