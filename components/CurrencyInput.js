@@ -42,8 +42,11 @@ export default function CurrencyInput({
       </InputRightElement>
       <Input
         defaultValue="1"
-        onChange={(v) => setAmount(Number(v.target.value))}
-        type="number"
+        onChange={(v) =>
+          setAmount(parseFloat(v.target.value.replaceAll(",", ".")))
+        }
+        type="text"
+        inputMode="numeric"
         aria-label="Choose amount"
         autoFocus={initialFocus}
       />
