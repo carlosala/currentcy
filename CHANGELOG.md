@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.16](https://github.com/carlosala/currentcy/compare/v0.4.15...v0.4.16) (2023-10-27)
+
+
+### Bug Fixes
+
+* now input accepts multiple commas or dots ([0c47257](https://github.com/carlosala/currentcy/commit/0c472571ddfaadb0c20565b1136d6b5f4e412520))
+
 ### [0.4.15](https://github.com/carlosala/currentcy/compare/v0.4.14...v0.4.15) (2023-10-01)
 
 
