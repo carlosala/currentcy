@@ -25,6 +25,24 @@ export default function CurrencyInput({
 }) {
   const data = useData()
   if (!data) return <div />
+  /**
+   * InputOnChange.
+   *
+   * @param {import("react").ChangeEvent<HTMLInputElement>} v
+   * @returns {void}
+   */
+  const inputOnChange = (v) => {
+    let amountStr = v.target.value.replaceAll(",", ".")
+    const firstDotIdx = amountStr.indexOf(".")
+    if (firstDotIdx !== -1) {
+      const strUntilDot = amountStr.slice(0, firstDotIdx + 1)
+      const strAfterDot = amountStr.slice(firstDotIdx + 1).replaceAll(".", "")
+      amountStr = strUntilDot + strAfterDot
+    }
+    const amount = parseFloat(amountStr)
+    if (isNaN(amount)) setAmount(0)
+    else setAmount(amount)
+  }
   return (
     <InputGroup
       alignSelf="center"
@@ -42,9 +60,7 @@ export default function CurrencyInput({
       </InputRightElement>
       <Input
         defaultValue="1"
-        onChange={(v) =>
-          setAmount(parseFloat(v.target.value.replaceAll(",", ".")))
-        }
+        onChange={inputOnChange}
         type="text"
         inputMode="numeric"
         aria-label="Choose amount"
