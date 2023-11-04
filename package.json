@@ -19,7 +19,7 @@
     "@vercel/analytics": "1.1.1",
     "cors": "2.8.5",
     "framer-motion": "10.16.4",
-    "next": "14.0.0",
+    "next": "14.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swr": "2.2.4"
@@ -28,11 +28,11 @@
     "@commitlint/cli": "18.2.0",
     "@commitlint/config-conventional": "18.1.0",
     "@types/cors": "2.8.15",
-    "eslint": "8.52.0",
-    "eslint-config-next": "14.0.0",
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.1",
     "eslint-config-prettier": "9.0.0",
     "eslint-config-standard": "17.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-n": "16.2.0",
     "eslint-plugin-promise": "6.1.1",
@@ -54,5 +54,5 @@
       "prettier-plugin-jsdoc"
     ]
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.0.1"
 }
