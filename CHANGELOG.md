@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.19](https://github.com/carlosala/currentcy/compare/v0.4.18...v0.4.19) (2024-03-03)
+
 ### [0.4.18](https://github.com/carlosala/currentcy/compare/v0.4.17...v0.4.18) (2023-11-23)
 
 ### [0.4.17](https://github.com/carlosala/currentcy/compare/v0.4.16...v0.4.17) (2023-11-04)
