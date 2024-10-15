@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.22](https://github.com/carlosala/currentcy/compare/v0.4.21...v0.4.22) (2024-10-15)
+
+
+### Features
+
+* make USD the main currency again ([1b6ed3e](https://github.com/carlosala/currentcy/commit/1b6ed3e99a891f083063bc56e5f8e144f13549fc))
+
 ### [0.4.21](https://github.com/carlosala/currentcy/compare/v0.4.20...v0.4.21) (2024-08-23)
 
 ### [0.4.20](https://github.com/carlosala/currentcy/compare/v0.4.19...v0.4.20) (2024-04-14)
